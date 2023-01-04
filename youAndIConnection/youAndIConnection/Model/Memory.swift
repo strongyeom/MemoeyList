@@ -8,11 +8,8 @@
 import Foundation
 import UIKit
 
-struct Memory: Identifiable {
-    var id: Int // List로 출력할때 Identifiable 처리를 가능하게 함
-    var title: String
+struct Memory: Hashable{
+    var id: String // List로 출력할때 Identifiable 처리를 가능하게 함
     var description: String
-    var image: UIImage
-    var imageUrl: String // asyn이미지 쓸때 필요
-    
+   // var image: UIImage
 }

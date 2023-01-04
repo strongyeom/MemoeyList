@@ -18,7 +18,6 @@
 		264534292965996F00061B37 /* TextLimitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264534282965996F00061B37 /* TextLimitManager.swift */; };
 		2645342C29659A3E00061B37 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2645342B29659A3E00061B37 /* Memory.swift */; };
 		2645342E29659A4C00061B37 /* MemoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2645342D29659A4C00061B37 /* MemoryStore.swift */; };
-		2645343129659B4800061B37 /* MemoryData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2645343029659B4800061B37 /* MemoryData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,6 @@
 		264534282965996F00061B37 /* TextLimitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLimitManager.swift; sourceTree = "<group>"; };
 		2645342B29659A3E00061B37 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
 		2645342D29659A4C00061B37 /* MemoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStore.swift; sourceTree = "<group>"; };
-		2645343029659B4800061B37 /* MemoryData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MemoryData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,14 +65,9 @@
 		264534112965991A00061B37 /* youAndIConnection */ = {
 			isa = PBXGroup;
 			children = (
+				264534322965C97400061B37 /* Views */,
 				2645342A29659A3000061B37 /* Model */,
 				264534122965991A00061B37 /* youAndIConnectionApp.swift */,
-				264534142965991A00061B37 /* ContentView.swift */,
-				264534202965993A00061B37 /* YouAndIConnection.swift */,
-				264534222965996300061B37 /* MemoryList.swift */,
-				264534242965996600061B37 /* MemoryCalendar.swift */,
-				264534262965996900061B37 /* AddMemoryMemo.swift */,
-				264534282965996F00061B37 /* TextLimitManager.swift */,
 				264534162965991C00061B37 /* Assets.xcassets */,
 				264534182965991C00061B37 /* Preview Content */,
 			);
@@ -94,17 +87,21 @@
 			children = (
 				2645342B29659A3E00061B37 /* Memory.swift */,
 				2645342D29659A4C00061B37 /* MemoryStore.swift */,
-				2645342F29659B2700061B37 /* Resources */,
+				264534282965996F00061B37 /* TextLimitManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		2645342F29659B2700061B37 /* Resources */ = {
+		264534322965C97400061B37 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2645343029659B4800061B37 /* MemoryData.json */,
+				264534142965991A00061B37 /* ContentView.swift */,
+				264534202965993A00061B37 /* YouAndIConnection.swift */,
+				264534222965996300061B37 /* MemoryList.swift */,
+				264534242965996600061B37 /* MemoryCalendar.swift */,
+				264534262965996900061B37 /* AddMemoryMemo.swift */,
 			);
-			path = Resources;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +163,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2645341A2965991C00061B37 /* Preview Assets.xcassets in Resources */,
-				2645343129659B4800061B37 /* MemoryData.json in Resources */,
 				264534172965991C00061B37 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,12 +9,16 @@ import SwiftUI
 
 struct MemoryList: View {
     @State private var isShowingSheet: Bool = false
+    @StateObject var memoryStore = MemoryStore()
     var body: some View {
         // 메모를 추가하면 배열 안에 쌓여서 리스트로 나타남
         ZStack {
             List {
-                Text("123")
+                ForEach(memoryStore.memoryList, id:\.self) { memory in
+                    Text(memory.description)
+                }
             }
+            
             
             Button {
                 print("생성 버튼이 눌렸습니다.")
@@ -30,7 +34,7 @@ struct MemoryList: View {
             }
             .offset(x: 130,y: 210)
             .sheet(isPresented: $isShowingSheet) {
-                AddMemoryMemo(isShowingSheet: $isShowingSheet)
+                AddMemoryMemo(memoryStore: memoryStore, isShowingSheet: $isShowingSheet)
             }
 
             
